@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ecoworld.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="Ecoworld.js" defer></script>
+    <title>Eco World</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-bar"> 
+            <div class="page-links">
+                <a href="#homepage" class="H-link"> Home </a>
+                <a href="#second-page" class="H-link"> Learn Habits  </a>
+                <a href="#cardGame" class="H-link"> Play a game!  </a>
+            </div>
+        </div>
+        <div id="homepage" class="homepage">
+            <div></div>
+            <div class="descr-container">
+                <p class="welcome"> 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 </p>
+                <h1> ECO WORLD </h1>
+                <p class="web-description"> Eco World, a place where we learn about eco habits we can aquire in everyday life, and to live a sustainable life. Join us to educate ourselves while having fun! Suitable for all kids.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="second-page" class="second-page">
+        <div class="container">
+            <div class="wheel-container">
+                <div class="wheel" id="wheel">
+                    <div class="item" data-index="0"> <i class="material-icons"> recycling </i> </div>
+                    <div class="item" data-index="1"> <i class="material-icons"> water_drop </i> </div>
+                    <div class="item" data-index="2"> <i class="material-icons"> bolt </i> </div>
+                    <div class="item" data-index="3"> <i class="material-icons"> nature </i> </div>
+                    <div class="item" data-index="4"> <i class="material-icons"> handshake </i> </div>
+                </div>
+            </div>
+            <div class="info">
+                <h2 id="infoTitle">Select an element!</h2>
+                <p id="infoText" class="description"><br> Click an icon on the wheel to learn Eco friendly habits.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cardGame">
+        <h1 id="letsPlay"> Let's play! </h1>
+
+    
+        <button id="tutorialBtn">How to play ?</button>
+        <div id="tutorial" class="tutorial">
+            <h3>tutorial</h3>
+            <p>Turn over two cards at a time<br>
+            If they match, they remain flipped<br>
+            If they don't match, they flip over and you hear an error sound<br>
+            Flip all the cards to win!</p>
+        </div>
+
+        <div class="Game-container">
+            <div class="card" data-name="balayage"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="balayage.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="arbre"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="arbre.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="plante"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="plante.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="plante"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="plante.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="arbre"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="arbre.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="balayage"> 
+                <div class="inner-card">
+                    <div class="front-card">
+                        <img src="save me.png" alt="">
+                    </div>
+                    <div class="back-card">
+                        <img src="balayage.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="restart"> RESTART </button>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2 class="congratulations"> ˗ˏˋ Congratulations! ˎˊ˗ </h2>
+                <p> You have won!</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+
+        <audio id="winSound" src="win.wav"></audio>
+        <audio id="errorSound" src="error.mp3"></audio>
+
+    </div>
+
+    <footer>
+        <p>© all rights reserved to the owner of the website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
